@@ -5,6 +5,11 @@
 #' @examples
 #' nasdaq_approve(securities)
 nasdaq_approve <-  function(securities = NA) {
+  #stopifnot(as.list(securities))
+}
+
+
+demo <-  function() {
 
   securities <- list(
     AAPL = list(
@@ -37,8 +42,5 @@ nasdaq_approve <-  function(securities = NA) {
     )
   )
 
-  #stopifnot(as.list(securities))
-
-  securities_obj <- map(securities, ~ nasdaq100$new(.))
-  sec_app <- map(securities_obj, ~  .$approve())
+  map(securities, ~ nasdaq100$new(.)) %>% map( ~  .$approve())
 }
