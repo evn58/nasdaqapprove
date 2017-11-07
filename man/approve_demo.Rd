@@ -7,7 +7,7 @@
 approve_demo()
 }
 \value{
-List with approve to listed on exchange \code{security}
+List with approve to listed on exchange by required fields
 }
 \description{
 Check security to approve listed on nasdaq exchange demo

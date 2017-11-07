@@ -11,7 +11,7 @@ nasdaq_approve <-  function(securities = NA) {
 
 #' Check security to approve listed on nasdaq exchange demo
 #'
-#' @return List with approve to listed on exchange \code{security}
+#' @return List with approve to listed on exchange by required fields
 #' @examples
 #' approve_demo()
 approve_demo <-  function() {
