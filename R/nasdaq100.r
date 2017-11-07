@@ -1,6 +1,7 @@
+
 nasdaq100 <- R6Class(
   "nasdaq100",
-  inherit = security_factory,
+  inherit = nasdaq_security,
 
   public = list(
 
@@ -26,7 +27,7 @@ nasdaq100 <- R6Class(
     },
 
     is_daily_volume = function() {
-      if (private$required$..required_daily_volume < super$daily_volume()) {
+      if (private$..required_daily_volume < super$daily_volume) {
         return(
           approval_message(FALSE, "Volume error")
         )
@@ -36,9 +37,7 @@ nasdaq100 <- R6Class(
   ),
 
   private = list(
-    required = list(
-      ..required_daily_volume = 500
-    )
+    ..required_daily_volume = 500
   )
 )
 

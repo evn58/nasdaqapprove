@@ -3,8 +3,7 @@
 #' @param security A lsit.
 #' @return List with approve to listed on exchange \code{security}
 #' @examples
-#' add(1, 1)
-#' add(10, 1)
+#' nasdaq_approve(securities)
 nasdaq_approve <-  function(securities = NA) {
 
   securities <- list(
@@ -41,7 +40,5 @@ nasdaq_approve <-  function(securities = NA) {
   #stopifnot(as.list(securities))
 
   securities_obj <- map(securities, ~ nasdaq100$new(.))
-
   sec_app <- map(securities_obj, ~  .$approve())
-
 }
