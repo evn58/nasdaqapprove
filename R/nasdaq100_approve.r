@@ -9,8 +9,12 @@ nasdaq_approve <-  function(securities = NA) {
 }
 
 
-demo <-  function() {
-
+#' Check security to approve listed on nasdaq exchange demo
+#'
+#' @return List with approve to listed on exchange \code{security}
+#' @examples
+#' approve_demo()
+approve_demo <-  function() {
   securities <- list(
     AAPL = list(
       code = "AAPL",

@@ -10,7 +10,7 @@
 #' @return Object of \code{\link{R6Class}} with methods for nasdaq security listed approve
 #' @format \code{\link{R6Class}} object.
 #' @examples
-#' security_factory$new("list(code = "AAPL")")
+#' nasdaq_security$new("list(code = "AAPL")")
 #' @section Fields:
 #' @field code character
 #' @field daily_volume numeric
@@ -32,7 +32,6 @@
 #'
 #'   \item{\code{sethost(serveraddress)}}{This method changes server that you are contacting with to \code{serveraddress}}
 #'   }
-
 nasdaq_security <- R6Class(
   "nasdaq_security",
   public = list(

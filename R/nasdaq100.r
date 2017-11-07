@@ -1,4 +1,17 @@
-
+#library(R6)
+#' Class providing object with methods for nasdaq security approve result
+#'
+#' @docType class
+#' @importFrom R6 R6Class
+#' @export
+#' @keywords data
+#' @return Object of \code{\link{R6Class}} with methods for nasdaq security approve result
+#' @format \code{\link{R6Class}} object.
+#' @examples
+#' nasdaq100$new()
+#' @section Fields:
+#' @field none
+#' @field none
 nasdaq100 <- R6Class(
   "nasdaq100",
   inherit = nasdaq_security,

@@ -16,6 +16,5 @@ List with approve to listed on exchange \code{security}
 Check security to approve listed on nasdaq exchange
 }
 \examples{
-add(1, 1)
-add(10, 1)
+nasdaq_approve(securities)
 }
